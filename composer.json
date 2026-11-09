@@ -1,0 +1,43 @@
+{
+    "name": "youvision/think-imgsrc",
+    "description": "ThinkPHP 8 图片地址提取组件：从 HTML 或文章内容中高效提取图片地址，支持懒加载属性、黑名单、排序、去重与绝对地址补全。",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "thinkphp",
+        "imgsrc",
+        "image",
+        "html",
+        "extract"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "topthink/framework": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "youvision\\thinkimgsrc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "youvision\\thinkimgsrc\\tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "youvision\\thinkimgsrc\\ImgsrcService"
+            ],
+            "config": {
+                "imgsrc": "config/imgsrc.php"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
