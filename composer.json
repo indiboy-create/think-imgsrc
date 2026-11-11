@@ -1,5 +1,15 @@
 {
     "name": "youvision/think-imgsrc",
+    "authors": [
+        {
+            "name": "indiboy-create",
+            "homepage": "https://github.com/indiboy-create"
+        },
+        {
+            "name": "AI",
+            "role": "Developer"
+        }
+    ],
     "description": "ThinkPHP 8 图片地址提取组件：从 HTML 或文章内容中高效提取图片地址，支持懒加载属性、黑名单、排序、去重与绝对地址补全。",
     "type": "library",
     "license": "MIT",
